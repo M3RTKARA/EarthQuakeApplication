@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="25dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/popTitle"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:text="Filter The Area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/arrangements"
+                    android:text="      Arrangements"
+                    android:padding="8dp"
+                    android:textSize="17sp"
+                    android:layout_below="@id/popTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/desmissPopTop"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:drawable/ic_menu_close_clear_cancel"
+                    android:layout_alignBottom="@+id/popListTitle" />
+
+                <TextView
+                    android:id="@+id/sectionTitle"
+                    android:textSize="18sp"
+                    android:text="The Minimum Magnitude of the Filtering Area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/arrangements"/>
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sectionTitle"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioBtn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3.5M > x"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/radioBtn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.5 > x > 3.5M"/>
+
+                    <RadioButton
+                        android:id="@+id/radioBtn3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="x > 4.5M"/>
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/sectionTitle2"
+                    android:textSize="18sp"
+                    android:text="The Radius of the Filtering Circle Area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioGroup"/>
+
+                <TextView
+                    android:id="@+id/txtView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sectionTitle2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="11dp"
+                    android:text="Enter the radius: " />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sectionTitle2"
+                    android:layout_toRightOf="@+id/txtView"
+                    android:ems="10"
+                    android:inputType="numberDecimal"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editText"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/dismissPop"
+                        android:text="Close"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:background="@color/colorAccent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/applyFilter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:layout_toStartOf="@+id/dismissPop"
+                        android:background="#008000"
+                        android:text="Apply"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+</LinearLayout>
